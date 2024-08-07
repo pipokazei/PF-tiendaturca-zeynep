@@ -8,9 +8,6 @@
 html {
     height: 100%;
 }
-body {
-    height: 100%; 
-}
 main {
     height: 100%; 
 }
@@ -29,7 +26,7 @@ header{
 }
 footer{
     background: #cab1e2;
-    margin: "50px 50px"
+    margin-top: 20px;
 }
 .navbar {
     display: flex;
@@ -39,7 +36,10 @@ footer{
     background-color: #dacaec; 
     width: 100%;
 }
-.brand {
+.navbar-nav {
+    margin-left: auto;
+}
+.navbar-brand {
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
@@ -61,23 +61,14 @@ footer{
     font-size: 24px;
     border-radius: 5px;
 }
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-}
-.navbar nav ul li a {
+
+.nav-link {
     font-size: 18px;
     cursor: pointer;
     text-decoration: none;
     color: inherit;
 }
-.navbar nav ul li a:hover,
-.navbar nav ul li a:active,
-.navbar nav ul li a:focus {
-    text-decoration: none;
-    color: inherit; 
-}
+
 .brand-explanation {
     display: flex;
     align-items: center;
@@ -233,18 +224,12 @@ nav ul {
     font-size: 20px;
 }
 
-/*  CONTACT PAGE*/
-.contact-title{
+/* CONTACT PAGE */
+.contact-title {
     margin-left: 20px;
 }
-.contact-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    margin: 0px 20px 20px 20px;
-}
-.contact-info {
-    width: 30%;
+.custom-row {
+    padding-left: 30px; 
 }
 .contact-info p {
     margin-bottom: 10px;
@@ -254,12 +239,7 @@ nav ul {
     text-decoration: none;
     font-weight: bold;
 }
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width:70%;
-}
+
 .contact-form label {
     font-weight: bold;
 }
@@ -269,7 +249,7 @@ nav ul {
 }
 .contact-form textarea {
     width: 80%;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 .contact-form button {
     background-color: #8e44ad;
@@ -279,3 +259,4 @@ nav ul {
     cursor: pointer;
     width: 80%;
 }
+
