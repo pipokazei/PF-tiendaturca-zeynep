@@ -1,0 +1,45 @@
+// _navbar.scss
+@import 'variables';
+@import 'mixins';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include responsive-style(null, null, 100%, 10px 20px);
+  background-color: $secondary-bg-color;
+
+  .navbar-brand {
+    @include responsive-style(24px);
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    font-family: $secondary-font;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+}
+
+.bg-navbar {
+  background-image: url("../assets/images/kapadox.jpeg");
+  @include responsive-style(null, 80vh, 100%);
+  background-size: cover;
+  @include flex-center;
+}
+
+.ga-maamli-regular {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-style: normal;
+  @include responsive-style(24px);
+  border-radius: 5px;
+}
+
+.nav-link {
+  @include responsive-style(18px);
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}

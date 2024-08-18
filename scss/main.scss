@@ -1,0 +1,11 @@
+// main.scss
+@import './variables';
+@import './mixins';
+@import './layout/global';
+@import './layout/navbar';
+@import './layout/product-cards';
+@import './layout/newsletter';
+@import './layout/brand-explanation';
+@import './pages/products-page';
+@import './pages/shopping-cart';
+@import './pages/contact';

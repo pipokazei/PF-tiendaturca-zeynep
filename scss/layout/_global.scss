@@ -1,0 +1,31 @@
+@import '../variables';
+@import '../mixins';
+
+
+* {
+  font-family: $primary-font;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  @include responsive-style(null, 100%);
+  padding-bottom: 20px;
+}
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+footer {
+  background: $highlight-bg-color;
+  margin-top: 40px;
+}
+
+
+.page-bg {
+  background-color: $primary-bg-color;
+}

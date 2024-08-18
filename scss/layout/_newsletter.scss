@@ -1,0 +1,44 @@
+@import '../variables';
+@import '../mixins';
+
+.newsletter-subscription {
+  background: $highlight-bg-color;
+  @include responsive-style(null, null, null, 40px);
+  text-align: left;
+  @include flex-center;
+
+  .newsletter-content {
+    @include responsive-style(null, null, 500px);
+
+    .newsletter-announcement {
+      @include responsive-style(14px, null, null, 0 0 10px);
+    }
+
+    h3 {
+      @include responsive-style(24px, null, null, 0 0 10px);
+    }
+
+    .newsletter-description {
+      @include responsive-style(16px, null, null, 0 0 20px);
+    }
+
+    .newsletter-form {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+
+      input {
+        flex: 1;
+        @include responsive-style(null, null, null, 10px);
+        border: none;
+        outline: none;
+      }
+
+      button {
+        @include button-style;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import '../mixins';
+
+.shopping-cart-main {
+  @include responsive-style(null, null, null, 0 0 0 20px);
+}
+
+.cart-text {
+  @include responsive-style(20px, null, null, 0 0 0 40px);
+}

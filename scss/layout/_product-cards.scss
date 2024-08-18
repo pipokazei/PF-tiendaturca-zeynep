@@ -1,0 +1,45 @@
+@import '../variables';
+@import '../mixins';
+
+.highlighted-products {
+  @include responsive-style(null, null, null, 20px);
+  background-color: $secondary-bg-color;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+
+  .product-card {
+    text-align: center;
+    @include responsive-style(null, null, 300px);
+
+    .product-image {
+      background-color: $primary-bg-color;
+      border: 1px solid $border-color;
+      border-radius: 5px;
+      @include responsive-style(null, null, 100%, 10px);
+      box-shadow: 0 4px 8px $box-shadow-color;
+
+      img {
+        @include responsive-style(null, 250px, 100%);
+        border-radius: 5px 5px 0 0;
+      }
+    }
+
+    p {
+      @include responsive-style(null, null, null, 10px 0);
+    }
+
+    button {
+      @include button-style;
+    }
+  }
+}
+
+.all-products-text {
+  @include flex-center;
+  @include responsive-style(null, null, null, 20px 0);
+}
