@@ -1,0 +1,10 @@
+@import '../mixins';
+
+.brand-explanation {
+    @include flex-center;
+    @include responsive-style(null, null, null, 20px 0);
+    p {
+        @include responsive-style(null, null, 50%);
+        text-align: center;
+    }
+}
