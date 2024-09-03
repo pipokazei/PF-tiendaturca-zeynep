@@ -27,18 +27,18 @@
   background-size: cover;
   display: flex;
   justify-content: center;
-}
-
-.bg-navbar-text {
-  font-family: "Spicy Rice", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 24px; 
-  margin-top: 20px; 
-  white-space: nowrap; 
-  overflow: hidden;
-  display: inline-block;
-  animation: typing 3s steps(50, end); 
+  
+  .bg-navbar-text {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px; 
+    margin-top: 20px; 
+    white-space: nowrap; 
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 3s steps(50, end); 
+  }
 }
 
 @keyframes typing {
