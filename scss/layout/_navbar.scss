@@ -20,33 +20,16 @@
     margin-left: auto;
   }
 }
+.carousel {
+  position: relative;
 
-.bg-navbar {
-  background-image: url("../assets/images/kapadox.jpeg");
-  @include responsive-style(null, 50vh, 100%);
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-}
+  .carousel-item {
+    position: relative;
 
-.bg-navbar-text {
-  font-family: "Spicy Rice", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 24px; 
-  margin-top: 20px; 
-  white-space: nowrap; 
-  overflow: hidden;
-  display: inline-block;
-  animation: typing 3s steps(50, end); 
-}
-
-@keyframes typing {
-  from { 
-    width: 0; 
-  }
-  to { 
-    width: 30%; 
+    .carousel-image {
+      height: 50vh; 
+      object-fit: cover; 
+    }
   }
 }
 
