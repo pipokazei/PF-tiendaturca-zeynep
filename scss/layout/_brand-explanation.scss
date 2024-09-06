@@ -3,8 +3,22 @@
 .brand-explanation {
     @include flex-center;
     @include responsive-style(null, null, null, 20px 0);
+    flex-direction: column;
     p {
         @include responsive-style(null, null, 50%);
         text-align: center;
+    }
+    .highlight {
+        font-weight: bold;
+        // display: block;
+        margin-bottom: 10px; 
+    }
+    .description-text {
+        font-family: "Spicy Rice", serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: black;
+        padding: 10px;
+        margin: 0;
     }
 }
